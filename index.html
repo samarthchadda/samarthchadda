@@ -131,6 +131,19 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
       <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: samarthchadda@gmail.com</p>
     </div><br>
     <p>Lets get in touch. Send me a message:</p>
+<script LANGUAGE="JavaScript" type="text/javascript">
+function display() {
+  DispWin = window.open('','NewWin', 'toolbar=no,status=no,width=400,height=300')
+ 
+
+  message = "<b><h2>Thank You </b>" + document.form1.name.value+"</h2>";
+  message += "<b><h3>Email: </b>" + document.form1.Email.value+"</h3>";
+  
+   message+="<br><h1>Your response is submitted to Samarth Tech.</h1>";
+  DispWin.document.write(message);
+
+}
+</script>
 
     <form>
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Name"  name="fname"></p>
@@ -138,7 +151,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
       <p>
-         <input type="button" value="Submit"  class="class="w3-button w3-light-grey w3-padding-large" onclick="myfunc()">
+         <input type="button" value="Submit"  class="class="w3-button w3-light-grey w3-padding-large" onclick="display()">
 
       </p>
     </form>
