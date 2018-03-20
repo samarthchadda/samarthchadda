@@ -72,7 +72,7 @@ a.active, .nav a:hover{
 	width: 90%;
 }
   .content{
-  	width: 75;
+  	width: 75%;
   	height: auto;
   	min-height: 540px;
   	/*background-color: red;*/
