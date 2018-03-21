@@ -87,7 +87,33 @@ a.active, .nav a:hover{
 	bottom: -13px;
 	color: white;
 	font-family: verdana;
+	text-shadow: 0 0 20px #ff005b;
+		transform: translate(-5%,-5%);
 
+}
+.home:after
+{
+	content: attr(data-text);
+	position: absolute;
+	top:0;
+	left: 0;
+	padding: 0 20px;
+	z-index: -1;
+	color: #ff005b;
+	filter: blur(25px); 
+}
+.home:before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #fe3a80;
+	z-index: -2;
+	opacity: 0.4;
+	filter: blur(50px);
 }
 .home h1{
 	font-size: 67px;
