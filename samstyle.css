@@ -120,15 +120,16 @@ a.active, .nav a:hover{
 	right: 0;
 	bottom: -7px;
 	color: black;
-
+	top:0.5%;
 	padding: 0 5px;
-    display: none;
+        display: none;
 
 
 }
 .gallery .image{
 	margin: 4px;
 	float: left;
+	margin-top:6px;
 
 }
    .image img{
@@ -147,7 +148,9 @@ a.active, .nav a:hover{
 
 h4{
 	color: red;
-	font-size: 48px;
+	font-size: 85px;
+	opacity:600;
+	margin-bottom:12px;
 }
 
 .contactme{
