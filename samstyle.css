@@ -113,7 +113,7 @@ a.active, .nav a:hover{
 	background: #fe3a80;
 	z-index: -2;
 	opacity: 0.4;
-	filter: blur(50px);
+	filter: blur(62px);
 }
 .home h1{
 	font-size: 53px;
