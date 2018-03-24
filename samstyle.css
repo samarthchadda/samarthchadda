@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
 *{
 	margin: 0;
 	padding: 0;
@@ -8,6 +9,7 @@ html , body{
 	height: 100%;
 	font-size: 14px;
 	font-weight: normal;
+	font-family: 'Quicksand', sans-serif;
 
 }
 .background{
@@ -17,10 +19,21 @@ html , body{
 	overflow-y: auto;
 	position: relative;
 	width: 100%;
-	height: 115%;
+	height: 100%;
 
 
 }
+
+.background:before {
+			content: '';
+			/*background: rgba(200, 105, 163, 0.85);*/	
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+		}
+
 .nav{
 	width: 25%;
 	height: auto;
@@ -28,7 +41,7 @@ html , body{
 		position: absolute;
 		top: 20%;
 		left: 0;
-	z-index:123;
+		z-index: 123;
 }
 .nav a{
 	text-decoration: none;
@@ -71,6 +84,9 @@ a.active, .nav a:hover{
 .d{
 	width: 70%;
 }
+.e{
+	width: 70%;
+}
   .content{
   	width: 75%;
   	height: auto;
@@ -87,7 +103,7 @@ a.active, .nav a:hover{
 	bottom: -13px;
 	color: white;
 	font-family: verdana;
-	text-shadow: 0 0 20px #ff005b;
+		text-shadow: 0 0 20px #ff005b;
 		transform: translate(-5%,-5%);
 
 }
@@ -110,16 +126,17 @@ a.active, .nav a:hover{
 	left: 0;
 	width: 100%;
 	height: 100%;
-/* 	background: #fe3a80; */
+	/*background: #fe3a80;*/
 	z-index: -2;
 	opacity: 0.4;
-	filter: blur(62px);
+	filter: blur(50px);
 }
 .home h1{
 	font-size: 53px;
 	padding-right: 12px;
 	border-bottom: 1px solid white;
 	text-transform: uppercase;
+	
 }
 .home h3{
 	font-size: 34px;
@@ -139,6 +156,7 @@ a.active, .nav a:hover{
 .aboutme  h2{
 	line-height: 30px;
 	line-height: 80px;
+
 }
 
 .gallery{
@@ -148,7 +166,7 @@ a.active, .nav a:hover{
 	color: black;
 	top:0.5%;
 	padding: 0 5px;
-        display: none;
+    display: none;
 
 
 }
@@ -223,6 +241,7 @@ h4{
 	clear: both;
 	margin-top: 25px;
 }
+/*
 #dd{
 	float: left;
 	clear: both;
@@ -230,5 +249,32 @@ h4{
 	font-size: 40px;
 	color: white;
 }
+.manu
+{
+background-color: red;
+width: 200px;
+height: 200px;
+position: absolute;
+left: 600px;
+top:300px;
+}
 
-
+.case{
+	position: absolute;
+	top: 830px;
+	left: 230px;
+	height: 50px;
+	width: 260px;
+	background-color: transparent;
+}
+.case a{
+	background-color: black;
+	position: absolute;
+	top: 5px;
+	color: white;
+	padding: 10px 3px;
+	font-weight: bold;
+	font-size: 30px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
