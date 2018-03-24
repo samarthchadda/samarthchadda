@@ -258,11 +258,11 @@ position: absolute;
 left: 600px;
 top:300px;
 }
-
+*/
 .case{
 	position: absolute;
-	top: 830px;
-	left: 230px;
+	top: 280px;
+	left: 30px;
 	height: 50px;
 	width: 260px;
 	background-color: transparent;
@@ -277,4 +277,22 @@ top:300px;
 	font-size: 30px;
 	text-decoration: none;
 	text-transform: uppercase;
+	display: inline-block;
+	text-align: center;
+	transition: 200ms;
+}
+.case a:hover{
+	background-color: white;
+	background-repeat: repeat;
+	color: black;
+	width: 300px;
+	transition: 300ms;
+}
+
+
+.contactform h1{
+	color: white;
+	position: absolute;
+	top: 500px;
+	
 }
