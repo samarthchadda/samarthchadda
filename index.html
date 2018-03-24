@@ -15,8 +15,9 @@
 		<a class="d" href="#">CONTACT ME</a>
 
 	</div>
-
- 	<div class="content">
+	<div class="case">
+ 				<a href="case project with backend.mp4" download="case project">Case project</a>
+ 			</div>
  		<div class="home">	
  			<h1>I am Samarth Chadda</h1>
  			<h3>Student</h3>
@@ -93,13 +94,15 @@ Currently I am persuaing My B.tech from JECRC,jaipur.</i></h2>
  		$home = $('.home'),
  		$aboutme = $('.aboutme'),
  		$gallery = $('.gallery'),
- 		$contactme = $('.contactme');
+ 		$contactme = $('.contactme'),
+		$case = $('.case');
 
  		$a.click(function(){
  			$home.fadeIn();
  			$aboutme.fadeOut();
  			$gallery.fadeOut();
  			$contactme.fadeOut();
+			$case.fadeIn();
 
  		});
  		$b.click(function(){
@@ -107,18 +110,21 @@ Currently I am persuaing My B.tech from JECRC,jaipur.</i></h2>
  			$aboutme.fadeIn();
  			$gallery.fadeOut();
  			$contactme.fadeOut();
+			$case.fadeOut();
  		});
  		$c.click(function(){
  			$home.fadeOut();
  			$aboutme.fadeOut();
  			$gallery.fadeIn();
  			$contactme.fadeOut();
+			$case.fadeOut();
  		});
  		$d.click(function(){
  			$home.fadeOut();
  			$aboutme.fadeOut();
  			$gallery.fadeOut();
  			$contactme.fadeIn();
+			$case.fadeOut();
  		});
  	});
  </script>
