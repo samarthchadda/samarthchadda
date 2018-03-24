@@ -8,18 +8,27 @@
 
 
 <div class="background">
+	<div class="manu"></div>
 	<div class="nav">
+
 		<a class="a  active" href="#">HOME</a>
 		<a  class="b" href="#">ABOUT me</a>
 		<a class="c" href="#">SKILLS</a>
 		<a class="d" href="#">CONTACT ME</a>
+		<!-- <a class="e" href="#">IMP note</a> -->
+		
 
-	</div>
+	</div>	
 	
+<div class="case">
+ 				<a href="case project with backend.mp4" download="case project">Case project</a>
+ 			</div>
+ 	<div class="content">
  		<div class="home">	
- 			<h1>I am Samarth Chadda</h1>
+ 			<h1 data-text="I am Samarth Chadda">I am Samarth Chadda</h1>
  			<h3>Student</h3>
-			<br><br><br><br><h5>Open Website in Laptop for Better Animations</h5>
+ 			<br><br><br><br><h5>Open Website in Laptop for Better Animations</h5>
+ 			
  		 </div>
  		 <div class="aboutme">
  		 		<h2 style="font-size: 50px"><b>Hello everyone!</b></h2><br><h2 style="font-size: 38px"> <i>My name Is Samarth chadda. I belong to jaipur , Rajasthan.
@@ -31,36 +40,37 @@ Currently I am persuaing My B.tech from JECRC,jaipur.</i></h2>
  			
  			<h4>LEARNING:</h4>
  			<div class="image">
- 				<img src="download.png" height="280" width="280">
+ 				<img src="images/download.png" height="280" width="280">
  			</div>
  			<div class="image">
- 				<img src="download.jpg" height="280" width="280">
+ 				<img src="images/download.jpg" height="280" width="280">
  			</div>
  			<div class="image">
- 				<img src="download (2).png" height="280" width="280">
+ 				<img src="images/download (2).png" height="280" width="280">
  			</div>
  			<div class="image">
- 				<img src="download (1).png" height="280" width="280">
+ 				<img src="images/download (1).png" height="280" width="280">
  			</div>
  			<div class="image">
- 				<img src="download (3).png" height="280" width="280">
+ 				<img src="images/download (3).png" height="280" width="280">
  			</div>
  			<div class="image">
- 				<img src="images.jpg" height="280" width="280">
+ 				<img src="images/images.jpg" height="280" width="280">
  			</div>
  		</div>
 
  		<div class="contactme">
  			<div class="contactform">
- 				<form>
+ 				<form >
  					<input type="text" name="name"  class="inputtext" placeholder="Enter Your Name...." required="required">
  					<input type="text" name="ename"  class="inputtext" placeholder="Enter Your E-mail....">
  					<input type="text" name="mobile" class="inputtext"  placeholder="Enter Your Mobile number....">
  					<textarea cols="4" rows="6" class="inputmessage" placeholder="Your Messages...."></textarea>
- 					<input type="Submit" name="" class="submitbutton" value="Submit" onclick="myfunc()">
+ 						<input type="Submit" name="" class="submitbutton" value="Submit" onclick="myfunc()">
  					
  				</form>
- 				<br><h1 id="dd"></h1>
+ 			
+ 					<br><h1 id="dd"></h1>
  				<script type="text/javascript">
  					function myfunc(){
  						document.getElementById('dd').innerHTML="Thank You for submitting Your Response";
@@ -93,14 +103,13 @@ Currently I am persuaing My B.tech from JECRC,jaipur.</i></h2>
  		$aboutme = $('.aboutme'),
  		$gallery = $('.gallery'),
  		$contactme = $('.contactme'),
-		$case = $('.case');
-
+ 		$case = $('.case');
  		$a.click(function(){
  			$home.fadeIn();
  			$aboutme.fadeOut();
  			$gallery.fadeOut();
  			$contactme.fadeOut();
-			$case.fadeIn();
+ 			$case.fadeIn();
 
  		});
  		$b.click(function(){
@@ -108,24 +117,26 @@ Currently I am persuaing My B.tech from JECRC,jaipur.</i></h2>
  			$aboutme.fadeIn();
  			$gallery.fadeOut();
  			$contactme.fadeOut();
-			$case.fadeOut();
+ 			$case.fadeOut();
  		});
  		$c.click(function(){
  			$home.fadeOut();
  			$aboutme.fadeOut();
  			$gallery.fadeIn();
  			$contactme.fadeOut();
-			$case.fadeOut();
+ 			$case.fadeOut();
  		});
  		$d.click(function(){
  			$home.fadeOut();
  			$aboutme.fadeOut();
  			$gallery.fadeOut();
  			$contactme.fadeIn();
-			$case.fadeOut();
+ 			$case.fadeOut();
  		});
  	});
  </script>
+
+
 
 </body>
 </html>
