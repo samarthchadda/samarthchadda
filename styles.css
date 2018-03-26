@@ -99,6 +99,7 @@ a.active{
 	background-color: powderblue;
 	background-image: url(IMG-20170810-WA0004.jpg);
 	background-size: cover;
+	height: 880px;
 
 }
 .aboutme h1{
@@ -115,7 +116,8 @@ a.active{
 }
 .aboutme p{
 	color: #00FFFF;
-	font-size: 	30px;
+	padding: 75px;
+	font-size: 34px;
 	/*z-index: 12300;*/
 }
 .skills{
@@ -163,7 +165,7 @@ a.active{
 
 .contactme{
 		position: absolute;
-		top: 4000px;
+		top: 4200px;
 		color: black;
 		background-color: #B6B6B4;
 		/*padding-top: 0 60px;*/
