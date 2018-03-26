@@ -1,68 +1,66 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>About SAMARTH</title>
-	<link rel="stylesheet" type="text/css" href="samstyle.css">
+	<title>Image slider</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
+	<div class="slider">
+		<div class="load">
+			
+		</div>
+		<div class="content">
+			<div class="nav">
+				<ul>
+					<li><a  class="active" href="">HOME</a></li>
+					<li><a href="#about">ABOUT ME</a></li>
+					<li><a href="#skills">SKILLS</a></li>
+					<li><a href="#contact">CONTACT ME</a></li>
 
+				</ul>
+			</div>
+			<div class="principal">
 
-<div class="background">
-	<div class="manu"></div>
-	<div class="nav">
+				<h1>WELCOME</h1>
+				<p>I am Samarth Chadda</p>
+			</div>
+		</div>
+	</div>
+	<div class="aboutme" >
 
-		<a class="a  active" href="#">HOME</a>
-		<a  class="b" href="#">ABOUT me</a>
-		<a class="c" href="#">SKILLS</a>
-		<a class="d" href="#">CONTACT ME</a>
-		<!-- <a class="e" href="#">IMP note</a> -->
-		
-
-	</div>	
-	
-
- 	<div class="content">
-
- 		<div class="home">	
- 			<h1 data-text="I am Samarth Chadda">I am Samarth Chadda</h1>
- 			<h3>Student</h3>
- 			<br><br><br><br><h5>Open Website in Laptop for Better Animations</h5>
- 			<div class="case">
- 				<a href="case project with backend.mp4" download="case project">Case project</a>
- 			</div>
- 			
- 		 </div>
-
- 		 <div class="aboutme">
- 		 		<h2 style="font-size: 50px"><b>Hello everyone!</b></h2><br><h2 style="font-size: 38px"> <i>My name Is Samarth chadda. I belong to jaipur , Rajasthan.
+		<h1 id="about">ABOUT ME</h1>
+		<br><br><br><br><br>
+		<h2 style="font-size: 40px"><b>Hello everyone!</b></h2><br><p> My name Is Samarth chadda. I belong to jaipur , Rajasthan.
 I have done my schooling form Subodh Public School, Jaipur. <br>
-Currently I am persuaing My B.tech from JECRC,jaipur.</i></h2>
- 		 </div>
+Currently I am persuaing My B.tech from JECRC,jaipur.</p>
+<br><br>
+<br><br><br><br><br><br><br><br><br>
+	</div>
+	<div class="skills">
+			<h4 id="skills">LEARNING:</h4>
+ 			<div class="image">
+ 				<img src="images/html.png" height="280" width="280">
+ 			</div>
+ 			<div class="image">
+ 				<img src="images/css.jpg" height="280" width="280">
+ 			</div>
+ 			<div class="image">
+ 				<img src="images/js.png" height="280" width="280">
+ 			</div>
+ 			<div class="image">
+ 				<img src="images/php.png" height="280" width="280">
+ 			</div>
+ 			<div class="image">
+ 				<img src="images/c.png" height="280" width="280">
+ 			</div>
+ 			<div class="image">
+ 				<img src="images/cpp.jpg" height="280" width="280">
+ 			</div>
 
- 		<div class="gallery">
- 			
- 			<h4>LEARNING:</h4>
- 			<div class="image">
- 				<img src="download.png" height="280" width="280">
- 			</div>
- 			<div class="image">
- 				<img src="download.jpg" height="280" width="280">
- 			</div>
- 			<div class="image">
- 				<img src="download (2).png" height="280" width="280">
- 			</div>
- 			<div class="image">
- 				<img src="download (1).png" height="280" width="280">
- 			</div>
- 			<div class="image">
- 				<img src="download (3).png" height="280" width="280">
- 			</div>
- 			<div class="image">
- 				<img src="images.jpg" height="280" width="280">
- 			</div>
- 		</div>
-
- 		<div class="contactme">
+		
+	</div>
+	<div class="contactme">
+		<h1 id="contact">CONTACT ME</h1>
  			<div class="contactform">
  				<form >
  					<input type="text" name="name"  class="inputtext" placeholder="Enter Your Name...." required="required">
@@ -73,7 +71,7 @@ Currently I am persuaing My B.tech from JECRC,jaipur.</i></h2>
  					
  				</form>
  			
- 					<br><h1 id="dd"></h1>
+ 					<br><h2 id="dd"></h2>
  				<script type="text/javascript">
  					function myfunc(){
  						document.getElementById('dd').innerHTML="Thank You for submitting Your Response";
@@ -83,64 +81,5 @@ Currently I am persuaing My B.tech from JECRC,jaipur.</i></h2>
  			</div>
  			
  		</div>
- 	</div>
-</div>
-
-<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
- <script type="text/javascript">
- 	$(document).ready(function(){
- 		$('a').click(function(){
- 			 // alert("i am click");
- 			var selected = $(this);
- 			$('a').removeClass('active');
- 			$(selected).addClass('active');
-
-
-
- 		});
-
- 		var $a = $('.a'),
- 		$b = $('.b'),
- 		$c = $('.c'),
- 		$d = $('.d'),
- 		$home = $('.home'),
- 		$aboutme = $('.aboutme'),
- 		$gallery = $('.gallery'),
- 		$contactme = $('.contactme'),
- 		$case = $('.case');
- 		$a.click(function(){
- 			$home.fadeIn();
- 			$aboutme.fadeOut();
- 			$gallery.fadeOut();
- 			$contactme.fadeOut();
- 			$case.fadeIn();
-
- 		});
- 		$b.click(function(){
- 			$home.fadeOut();
- 			$aboutme.fadeIn();
- 			$gallery.fadeOut();
- 			$contactme.fadeOut();
- 			$case.fadeOut();
- 		});
- 		$c.click(function(){
- 			$home.fadeOut();
- 			$aboutme.fadeOut();
- 			$gallery.fadeIn();
- 			$contactme.fadeOut();
- 			$case.fadeOut();
- 		});
- 		$d.click(function(){
- 			$home.fadeOut();
- 			$aboutme.fadeOut();
- 			$gallery.fadeOut();
- 			$contactme.fadeIn();
- 			$case.fadeOut();
- 		});
- 	});
- </script>
-
-
-
 </body>
 </html>
