@@ -233,3 +233,34 @@ a.active{
 		top: 810px;
 		font-size: 40px;
 	}
+.manu a{
+		
+		text-decoration: none;
+		font-size: 28px;
+		font-family: verdana;
+		font-weight: bold;
+		width: 400px;
+		height: 90px;
+		/*display: inline-block;*/
+		margin: 5px 0;
+		float: left;
+		top: 4100px;
+		position: absolute;
+		left: 280px;
+		background-color: black;
+		color: white;
+		line-height: 90px;
+		text-align: center;
+		transition: 300ms;
+	
+		/*margin-top: 30px;*/
+	}
+
+	.manu a:hover{
+		color: white;
+		transition: 300ms;
+		/*transform: 300ms;*/
+		width: 550px;
+		background-color: blue;
+
+	}
