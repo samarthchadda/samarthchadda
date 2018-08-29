@@ -179,12 +179,12 @@ alert('Please re-check the captcha');
 </html>
  -->
 
-
 <!DOCTYPE html>
 <html>
 <head>
-	<title>About Samarth</title>
+	<title>Preload</title>
 	<link rel="stylesheet" type="text/css" href="preload.css">
+<!-- 	<link rel="stylesheet" type="text/css" href="styles.css"> -->
 </head>
 <body>
 <div class="preload">
@@ -201,8 +201,101 @@ alert('Please re-check the captcha');
 		
 	</div>
 </div>
-	
+<div class="conte">
+<!-- 	<h1>My name is samarth</h1> -->
+	<div class="slider">
+		<div class="load">
+			
+		</div>
+		<div class="content">
+			<div class="nav">
+				<ul>
+					<li><a  class="active" href="">HOME</a></li>
+					<li><a href="#about">ABOUT ME</a></li>
+					<li><a href="#skills">SKILLS</a></li>
+					<li><a href="#contact">CONTACT ME</a></li>
 
-<script type="text/javascript" src="preload.js"></script>
+				</ul>
+			</div>
+			<div class="principal">
+
+				<h1>WELCOME</h1>
+				<p>I am Samarth Chadda</p>
+			</div>
+		</div>
+	</div>
+	<div class="aboutme" >
+
+		<h1 id="about">ABOUT ME</h1>
+		<br><br><br><br><br><br><br><br>
+		<h2 style="font-size: 40px"><b>Hello everyone!</b></h2><br><p> My name Is Samarth chadda. I belong to jaipur , Rajasthan.
+I have done my schooling form Subodh Public School, Jaipur. <br>
+Currently I am persuaing My B.tech from JECRC,jaipur.</p>
+<br><br>
+<br><br><br><br><br><br><br><br><br>
+	</div>
+	<div class="skills">
+			<h4 id="skills">LEARNING:</h4>
+ 			<div class="image">
+ 				<img src="html.png" height="280" width="280">
+ 			</div>
+ 			<div class="image">
+ 				<img src="css.jpg" height="280" width="280">
+ 			</div>
+ 			<div class="image">
+ 				<img src="js.png" height="280" width="280">
+ 			</div>
+ 			<div class="image">
+ 				<img src="php.png" height="280" width="280">
+ 			</div>
+ 			<div class="image">
+ 				<img src="c.png" height="280" width="280">
+ 			</div>
+ 			<div class="image">
+ 				<img src="cpp.jpg" height="280" width="280">
+ 			</div>
+
+		
+	</div>
+	<div class="manu">
+ 			<a class="active" href="case project with backend.mp4" download="download">CASE LAB PROJECT</a>
+		</div>
+	<div class="contactme">
+		<h1 id="contact">CONTACT ME</h1>
+ 			<div class="contactform">
+ 				<form >
+ 					<input type="text" name="name"  class="inputtext" placeholder="Enter Your Name...." required="required">
+ 					<input type="text" name="ename"  class="inputtext" placeholder="Enter Your E-mail....">
+ 					<input type="text" name="mobile" class="inputtext"  placeholder="Enter Your Mobile number....">
+ 					<textarea cols="4" rows="6" class="inputmessage" placeholder="Your Messages...."></textarea>
+ 						<input type="Submit" name="" class="submitbutton" value="Submit" onclick="myfunc()">
+ 					
+ 				</form>
+ 			
+ 					<br><h2 id="dd"></h2>
+ 				<script type="text/javascript">
+ 					function myfunc(){
+ 						document.getElementById('dd').innerHTML="Thank You for submitting Your Response";
+ 					}
+ 				</script>
+ 			</div>
+ 			
+ 		</div>
+	
+</div>
+	
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+
+  <!-- or refer to preload.js -->
+<script type="text/javascript">
+	$(function(){
+		$(".preload").fadeOut(6000,function(){
+			$(".content").fadeIn(3000);
+		});
+	});
+</script>
 </body>
 </html>
