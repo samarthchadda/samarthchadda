@@ -6,7 +6,7 @@
 	function frame(){
 		if(loading== 100){
 			clearInterval(id);
-			window.open('index.html',"_self");
+			window.open('index1.html',"_self");
 
 		}
 		else{
