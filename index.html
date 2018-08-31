@@ -185,9 +185,38 @@ alert('Please re-check the captcha');
 	<title>About Samarth</title>
 	<link rel="stylesheet" type="text/css" href="preload.css">
 <!-- 	<link rel="stylesheet" type="text/css" href="styles.css"> -->
+	<style>
+/* Paste this css to your style sheet file or under head tag */
+/* This only works with JavaScript, 
+if it's not present, don't show loader */
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(Muybridge_race_horse_animated.gif) center no-repeat #fff;
+	background-size: cover;
+
+
+
+}
+.se-pre-con h1{
+	position: relative;
+	top: 20%;
+	text-align: center;
+	color: azure;
+	font-size: 90px;
+}
+</style>
+
 </head>
 <body>
-<div class="preload">
+	<div class="se-pre-con"><h1>Loading....</h1> </div>
+<!-- <div class="preload">
 	<div class="logo">
 		<span style="color: darkturquoise">Loading</span>
 	</div>
@@ -200,7 +229,18 @@ alert('Please re-check the captcha');
 		</div>
 		
 	</div>
-</div>
+</div> -->
+	
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+<script>
+	//paste this code under head tag or in a seperate js file.
+	// Wait for window load
+	$(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");;
+	});
+</script>
 <div class="conte">
 <!-- 	<h1>My name is samarth</h1> -->
 	<div class="slider">
@@ -284,18 +324,18 @@ Currently I am persuaing My B.tech from JECRC,jaipur.</p>
 	
 </div>
 	
-<script
+<!-- <script
   src="https://code.jquery.com/jquery-3.3.1.js"
   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-  crossorigin="anonymous"></script>
+  crossorigin="anonymous"></script> -->
 
   <!-- or refer to preload.js -->
-<script type="text/javascript">
+<!-- <script type="text/javascript">
 	$(function(){
 		$(".preload").fadeOut(6000,function(){
 			$(".content").fadeIn(3000);
 		});
 	});
-</script>
+</script> -->
 </body>
 </html>
